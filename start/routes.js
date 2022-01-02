@@ -16,9 +16,9 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-/* Route.get('/', () => {
+Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
-}) */
+})
 
 Route.resource('/article', 'ArticleController').apiOnly()
 Route.resource('/article_commande', 'ArtileCommandeController').apiOnly()
